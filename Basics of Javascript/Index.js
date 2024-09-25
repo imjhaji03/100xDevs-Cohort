@@ -21,9 +21,9 @@ console.log(strings[5]) //Print Undefined
 
 //OPERATORS
 
-let age = 22;
-let canVote = (age > 18);
-console.log(canVote)
+//let age = 22;
+//let canVote = (age > 18);
+//console.log(canVote)
 
 
 // FUNCTION DECLARATION (It defines a function, we can use n times.. Like a Helper)
@@ -43,3 +43,47 @@ function Sum(a,b) { // Here Sum is the name of function and a,b are the vairbles
 
 let Answer = Sum(2,3); // Here we assign the value to 2,3 to a,b
 console.log(Answer) // Here we print the output 
+
+/*function canVote(age){
+    Result = (age>18);
+    return Result;
+}
+
+let Output = canVote(25);
+console.log(Output)*/
+
+
+/*function canVote(age){ // Using if-else
+    if(age>18){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+let Output = canVote(15)
+console.log(Output)*/
+
+//IF-ELSE
+
+/*if (age >= 18) {
+    console.log("You are an adult.");
+} else {
+    console.log("You are a minor.");
+}*/
+
+// For loop
+for (let i = 0; i < 5; i++) { //updation i++ runs after the output is printed if the condition is true.
+    console.log(i); // Outputs 0 to 4
+}
+
+// While loop
+let j = 0;
+while (j < 5) {
+    console.log(j); // Outputs 0 to 4
+    j++;
+}
+
+let totalUsers = users. length; //To avoid hard coding
+
