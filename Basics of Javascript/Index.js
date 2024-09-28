@@ -1,4 +1,4 @@
-// VARIABLES
+/*// VARIABLES
 // Execution happens from 1st line to last line
 let firstName = "john"; //can be reassigned
 //const age = 30; //const var that cannot be reassigned
@@ -74,7 +74,7 @@ console.log(Output)*/
 }*/
 
 // For loop
-for (let i = 0; i < 5; i++) { //updation i++ runs after the output is printed if the condition is true.
+/*for (let i = 0; i < 5; i++) { //updation i++ runs after the output is printed if the condition is true.
     console.log(i); // Outputs 0 to 4
 }
 
@@ -83,7 +83,94 @@ let j = 0;
 while (j < 5) {
     console.log(j); // Outputs 0 to 4
     j++;
+}*/
+
+// let totalUsers = users.length; //To avoid hard coding
+
+// CoOMPLEX DATA TYPES
+
+// Key-Value pair Key(string) Value(any valid js DT)
+
+/*let user1name = "amit"
+let user1age = 20;
+let user1gender = "male"
+
+let user1 = {
+    name: "amit",
+    age: 20,
+    gender: "male",
+}
+console.log(user1.name) // objectname.key
+*/
+/*
+function greet(user) {
+    console.log("Hello" + " " + user.name + " "+ "Your age is" + " " + user.age)  // String concatenation
+}
+function canVote(user) {
+    if(user.age>18){
+        console.log("Eligible to Vote")
+    }
+    else {
+        console.log("Cannot vote")
+    }
+}*/
+/*let user = {
+    name: "amit",
+    age: 20,
+    gender: "male",
 }
 
-let totalUsers = users. length; //To avoid hard coding
+greet(user) // calling a function
+canVote(user)  */
 
+
+/*// ARRAY OF OBJECTS
+
+users = ["Amit", 20, {
+    gender: "male",
+    course: "webdev"
+}]
+
+console.log(users[2]) // array can also contain a Object 
+
+// An array can have an nested object --- array->object->array->object
+
+let user = [ "amit", 20,{
+    name: "amit",
+    age: 20,
+    gender: "male",
+    cities: ["delhi", "kolkata", "chennai", {
+        country: "India",
+        city: "Mumbai "
+    }]
+}]
+
+console.log(user[2].cities[2])*/
+
+function solve (arr) {
+    let arr2= [];
+    
+    for (let i=0; i<arr.length; i++){
+        if(arr[i].gender = "male" && arr[i].age > 18){
+            arr2.push(arr[i])
+        }
+    }
+    return arr2;      //function to get the details of users who are male and age >18
+}
+
+const users = [{
+    name: "rahul",
+    gender: "male",
+    age: 20
+},{
+    name: "rohan",
+    gender: "male",
+    age: 15
+},{
+    name: "ruhika",
+    gender: "female",
+    age: 12
+}
+]
+
+console.log(solve(users))
